@@ -22,7 +22,7 @@ class Neighborhood {
       return customer.neighborhoodId === this.id
       }.bind(this)
     )
-  } ///   Array.from(new Set(oldarray))
+  }
   meals() {
     let data =this.customers().map(function (cust) {
        return cust.meals()
@@ -30,9 +30,7 @@ class Neighborhood {
       const mergedata = [].concat.apply([],data)
     return [...new Set(mergedata)]
     //return Array.from(new Set(data))
-    //this.deliveries().map(function(value, index, self) {
-      //return self.indexOf(value) === index;
-   // })
+    
  }
 }
  class Meal {
