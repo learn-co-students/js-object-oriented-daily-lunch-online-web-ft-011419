@@ -41,6 +41,7 @@ class Neighborhood {
     }
 }
 
+// class Meal
 class Meal {
     constructor(title, price) {
         this.title = title;
@@ -68,6 +69,7 @@ class Meal {
     }
 }
 
+// class Customer
 class Customer {
     constructor(name, neighborhoodId) {
         this.name = name;
@@ -97,6 +99,7 @@ class Customer {
     }
 }
 
+// class Delivery
 class Delivery {
     constructor(mealId, neighborhoodId, customerId) {
         this.mealId = mealId;
