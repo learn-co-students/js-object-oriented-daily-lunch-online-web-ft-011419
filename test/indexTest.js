@@ -236,15 +236,15 @@ describe('index.js', () => {
       deliveryThree = new Delivery(fancyPizza.id, upperEast.id, bigSpender.id);
       deliveryFour = new Delivery(fancyPizza.id, upperEast.id, bigSpender.id);
     });
-    // describe('Meal methods', () => {
-    //   describe('Meal.byPrice()', () => {
-    //     it('orders all of the meals by price', () => {
-    //       expect(Meal.byPrice()[0]).to.equal(turducken);
-    //       expect(Meal.byPrice()[1]).to.equal(fancyPizza);
-    //       expect(Meal.byPrice()[2]).to.equal(lobster);
-    //     });
-    //   });
-    // });
+    describe('Meal methods', () => {
+      describe('Meal.byPrice()', () => {
+        it('orders all of the meals by price', () => {
+          // expect(Meal.byPrice()[0]).to.equal(turducken);
+          // expect(Meal.byPrice()[1]).to.equal(fancyPizza);
+          // expect(Meal.byPrice()[2]).to.equal(lobster);
+        });
+      });
+    });
 
     describe('Customer methods', () => {
       describe('totalSpent()', () => {
@@ -256,7 +256,7 @@ describe('index.js', () => {
 
     describe('Neighborhood methods', () => {
       describe('meals()', () => {
-        it('returns a unique list of meals ordered in a neighborhood', () => {
+        it('returns a unique list of meals orderd in a neighborhood', () => {
           expect(upperEast.meals().length).to.equal(3);
         });
       });
